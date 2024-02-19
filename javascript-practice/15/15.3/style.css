@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.chat {
+    width: 500px;
+    height: 350px;
+    background: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 13%);
+}
+.chat-send {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.chat-input {
+    width: 230px;
+    height: 31px;
+    border: 2px solid #9999f0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    color: #9999f0;
+}
+input::placeholder {
+    opacity: 0.4;
+}
+.chat-button, .chat-geo {
+    width: 120px;
+    height: 37px;
+    background: #fff;
+    border: 2px solid #9999f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #9999f0;
+    cursor: pointer;
+}
+.chat-message {
+    width: 95%;
+    height: 280px;
+    border: 2px solid #9999f0;
+    margin: 0 auto;
+    padding: 3px;
+}
+.block-message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.info-output {
+    color: grey;
+    font-style: italic;
+}
+.message-text {
+    border: 2px solid #9999f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #000;
+    text-align: right;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-right {
+    justify-content: flex-end;
+}
+.message-left {
+    justify-content: flex-start;
+}
+.message-geo {
+    justify-content: flex-end;
+}

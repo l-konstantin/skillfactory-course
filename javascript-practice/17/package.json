@@ -1,0 +1,22 @@
+{
+    "name": "module17_homework",
+    "version": "1.0.0",
+    "description": "npm guide for beginner",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "keywords": [
+      "npm",
+      "example",
+      "basic"
+    ],
+    "author": "Host",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.21.0",
+      "@babel/preset-env": "^7.20.2",
+      "babel-jest": "^29.4.3",
+      "jest": "^29.4.3"
+    }
+  }

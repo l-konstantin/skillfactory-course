@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "NunitoSans-Regular";
+    src: url('./fonts/NunitoSans-Regular.ttf');
+}
+@font-face {
+    font-family: "NunitoSans-Italic";
+    src: url('./fonts/NunitoSans-Italic.ttf');
+}
+@font-face {
+    font-family: "YesevaOne-Regular";
+    src: url('./fonts/YesevaOne-Regular.ttf');
+}
+body * {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* section projects */
+.projects {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.projects-fon {
+    width: 100%;
+    background: #131313;
+    min-height: 100vh;
+}
+.project-group {
+    max-width: 1256px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 107px 0 125px;
+}
+.project-data {
+    padding: 66px 0 0 42px;
+    min-height: 548px;
+}
+.project-data_title_name {
+    font-family: 'YesevaOne-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+    width: 55%;
+}
+.project-data_description {
+    font-family: 'NunitoSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+    margin: 34px 50px 42px 0;
+}
+.project-data_items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.project-data_item {
+    width: 215px;
+}
+.project-data_name {
+    font-family: 'YesevaOne-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+}
+.project-data_text {
+    font-family: 'NunitoSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    margin: 9px 100px 34px 0;
+}
+.project-pagination {
+    margin-top: 32px;
+}
+.project-pagination_items {
+    width: 200px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-pagination_item_points {
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-pagination_points {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-pagination_link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-pagination_left {
+    background-image: url('./images/left.svg');
+    background-size: cover;
+    width: 41px;
+    height: 13.5px;
+    position: absolute;
+}
+.project-pagination_circle {
+    background: rgba(255, 255, 255, 0.3);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+.project-pagination_circle:hover, .project-pagination_circle.active {
+    background: #fff;
+}
+.project-pagination_right {
+    background-image: url('./images/right.svg');
+    background-size: cover;
+    width: 41px;
+    height: 13.5px;
+    position: absolute;
+}
+.project-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 44px;
+}
+.project-photo_title {
+    position: relative;
+    width: 679px;
+    height: 482px;
+}
+.project-photo_title .project-photo_icon {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+.project-photo_title .project-photo_icon.active {
+    opacity: 1;
+}
+.project-city {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.project-city_name {
+    font-family: 'YesevaOne-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    margin-right: 58px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.project-city_name.active {
+    font-family: 'YesevaOne-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+    margin-right: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.project-city_name.active:after {
+    content: "";
+    background: #E3B873;
+    width: 100%;
+    height: 1px;
+    margin-top: 1px;
+}
