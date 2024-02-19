@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Проект "Сайт-визитка"</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<header class="header">
+    <h2 class="logo">Сайт-визитка</h2>
+    <ul class="menu">
+        <li class="menu_item">
+            <a href="#about" class="menu_link">Обо мне</a>
+        </li>
+        <li class="menu_item">
+            <a href="#skills" class="menu_link">Навыки</a>
+        </li>
+        <li class="menu_item">
+            <a href="#kontact" class="menu_link">Контакты</a>
+        </li>
+    </ul>
+</header>
+<main>
+    <h1 class="title_text">Константин Леденев</h1>
+    <div class="block_image">
+        <img class="image_avatar" src="images/avatar.jpg" alt="foto">
+    </div>
+    <ul id="about" class="block_about">
+        <li class="block_about_item"><h2>Обо мне:</h2> <p>Родился в РФ</p></li>
+        <li class="block_about_item"><h2>Образование: </h2> <p><b>Высшее</b> техническое</p></li>
+        <li class="block_about_item"><h2>Опыт работы: </h2> <p><i>Небольшой</i> опыт</p></li>
+        <li class="block_about_item"><h2>Хобби:</h2> <p>Спорт</p></li>
+    </ul>
+    <div id="skills" class="work">
+        <h3 class="work_title">Как я стал разработчиком</h3>
+        <ol class="block_work">
+            <li class="block_work_item">
+                <p>20 сентября нашел курсы Frontend-разработчик PRO</p>
+            </li>
+            <li class="block_work_item">
+                <p>29 сентября начался курс</p>
+            </li>
+            <li class="block_work_item">
+                <p>30 сентября приступил к изучению HTML</p>
+            </li>
+        </ol>
+    </div>
+    <div id="kontact" class="contact">
+        <h3 class="contact_title">Контакты</h3>
+        <ul class="block_contact">
+            <li class="block_contact_item">
+                <h4 class="block_contact_text">Email:</h4> <p>user@mail.ru</p>
+            </li>
+            <li class="block_contact_item">
+                <h4 class="block_contact_text">Phone:</h4> <p>+7 123 456-78-90</p>
+            </li>
+            <li class="block_contact_item">
+                <h4 class="block_contact_text">Соц. сети</h4>
+                <ol class="block_social">
+                    <li class="block_social_item">
+                        <a href="www.vk.com" title="вконтакте">
+                            <img class="block_social_icon" src="images/vk.png" alt="vk">
+                        </a>
+                    </li>
+                    <li class="block_social_item">
+                        <a href="www.youtube.com" title="youtube">
+                            <img src="images/youtube.png" alt="youtube" class="block_social_icon">
+                        </a>
+                    </li>
+                    <li class="block_social_item">
+                        <a href="www.dzen.ru" title="dzen">
+                            <img src="images/dzen.png" alt="dzen" class="block_social_icon">
+                        </a>
+                    </li>
+                    <li class="block_social_item">
+                        <a href="www.ok.ru" title="Одноклассники">
+                            <img src="images/ok.png" alt="ok" class="block_social_icon">
+                        </a>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer class="footer">
+    <span>&copy;&nbsp;Сайт Визитка</span>
+</footer>
+</body>
+</html>
